@@ -40,39 +40,25 @@ export default function Home() {
           <nav id="navbar" className="navbar">
             <ul>
               <li>
-                <a className="nav-link scrollto active" href="#hero">
-                  Inicio
-                </a>
+                <a className="nav-link scrollto active" href="#hero">Inicio</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#about">
-                  Nosotros
-                </a>
+                <a className="nav-link scrollto" href="#about">Nosotros</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#services">
-                  Servicios
-                </a>
+                <a className="nav-link scrollto" href="#services">Servicios</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#team">
-                  Equipo
-                </a>
+                <a className="nav-link scrollto" href="#team">Equipo</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#pricing">
-                  Precios
-                </a>
+                <a className="nav-link scrollto" href="#pricing">Precios</a>
               </li>
               <li>
-                <a className="nav-link scrollto text-success" href="#">
-                  Hazte Socio
-                </a>
+                <a className="nav-link scrollto text-success" href="#">Hazte Socio</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#contact">
-                  Contacto
-                </a>
+                <a className="nav-link scrollto" href="#contact">Contacto</a>
               </li>
               <li>
                 <a className="getstarted scrollto" href="#about">
@@ -93,7 +79,7 @@ export default function Home() {
             <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
               <h1 data-aos="fade-up">Tus paquetes llegan a todo el <span className="text-primary">país</span><i className="bi bi-geo-alt" /></h1>
               <h2 data-aos="fade-up" data-aos-delay={400}>
-                Ofrecemos un plan logístico, para satisfacer los requerimientos de nuestros clientes.
+                Ofrecemos un plan logístico, para satisfacer los requerimientos de nuestros clientes
               </h2>
               <div data-aos="fade-up" data-aos-delay={800}>
                 <a href="#about" className="btn-get-started scrollto">
@@ -149,16 +135,13 @@ export default function Home() {
                 </p>
                 <ul>
                   <li>
-                    <i className="ri-check-double-line" /> Ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat
+                    <i className="ri-check-double-line" /> Declaración de mercancías.
                   </li>
                   <li>
-                    <i className="ri-check-double-line" /> Duis aute irure dolor in
-                    reprehenderit in voluptate velit
+                    <i className="ri-check-double-line" /> Liquidación y pago de impuestos aduanales.
                   </li>
                   <li>
-                    <i className="ri-check-double-line" /> Ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat
+                    <i className="ri-check-double-line" /> Inspección y Verificación.
                   </li>
                 </ul>
               </div>
@@ -180,11 +163,7 @@ export default function Home() {
               <div className="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay={150} >
                 <img src="img/counts-img.jpg" alt="..." className="img-thumbnail rounded" />
               </div>
-              <div
-                className="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0"
-                data-aos="fade-left"
-                data-aos-delay={300}
-              >
+              <div className="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay={300} >
                 <div className="content d-flex flex-column justify-content-center">
                   <div className="row">
                     <div className="col-md-6 d-md-flex align-items-md-stretch">
@@ -192,7 +171,7 @@ export default function Home() {
                         <i className="bi bi-globe" />
                         <span data-purecounter-start={0} data-purecounter-end={65} data-purecounter-duration={1} className="purecounter" />
                         <p>
-                          <strong>Misión <br/></strong> Ofrecer servicios aduanales con calidad, seguridad y profesionalismo a importadores y exportadores.
+                          <strong>MISIÓN <br/></strong> Ofrecer servicios aduanales con calidad, seguridad y profesionalismo a importadores y exportadores.
                         </p>
                       </div>
                     </div>
@@ -201,7 +180,7 @@ export default function Home() {
                         <i className="bi bi-journal-richtext" />
                         <span data-purecounter-start={0} data-purecounter-end={85} data-purecounter-duration={1} className="purecounter" />
                         <p>
-                          <strong>Visión <br/></strong> Constituirnos en socios de nuestros clientes, entender sus necesidades
+                          <strong>VISIÓN <br/></strong> Constituirnos en socios de nuestros clientes, entender sus necesidades
                           y satisfacer cada una de ellas mediante una respuesta rápida en el trámite de sus mercancías.
                         </p>
                       </div>
@@ -211,7 +190,12 @@ export default function Home() {
                         <i className="bi bi-heart" />
                         <span data-purecounter-start={0} data-purecounter-end={18} data-purecounter-duration={1} className="purecounter" />
                         <p>
-                          <strong>Valores <br/></strong> VOLUNTAD EMPRESARIAL, RESPETO, ETICA PROFESIONAL
+                          <strong>VALORES <br/></strong> 
+                          <ul>
+                            <li>Voluntad Empresarial</li>
+                            <li>Respeto</li>
+                            <li>Ética Profesional</li>
+                          </ul>
                         </p>
                       </div>
                     </div>
@@ -318,7 +302,7 @@ export default function Home() {
                 <div className="card" style={{ backgroundImage: 'url("img/more-services-2.jpg")' }} data-aos="fade-up" data-aos-delay={200}>
                   <div className="card-body">
                     <h5 className="card-title">
-                      <a href="">Empaquetado</a>
+                      <a href="">Seguridad</a>
                     </h5>
                     <p className="card-text">
                       Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -339,8 +323,7 @@ export default function Home() {
                       <a href="">Delivery</a>
                     </h5>
                     <p className="card-text">
-                      Nemo enim ipsam voluptatem quia voluptas sit aut odit aut
-                      fugit, sed quia magni dolores.
+                      Te llevamos tus paquetes hasta la puerta de tu hogar, sin costo adicional.
                     </p>
                     <div className="read-more">
                       <a href="#"><i className="bi bi-arrow-right" /> Leer mas </a>
@@ -543,7 +526,7 @@ export default function Home() {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay={100}>
                   <div className="member-img">
-                    <img src="img/team/team-1.jpg" className="img-fluid rounded" alt="...." />
+                    <img src="img/team/team-1.jpeg" className="img-fluid rounded" alt="...." />
                     <div className="social">
                       <a href="#"><i className="bi bi-twitter" /></a>
                       <a href="#"><i className="bi bi-facebook" /></a>
@@ -552,15 +535,15 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Francisco Ramirez</h4>
-                    <span>Chief Executive Officer</span>
+                    <h4> Lic. Fernando Ramírez Vargas</h4>
+                    <span>Presidente, CEO</span>
                   </div>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay={200}>
                   <div className="member-img">
-                    <img src="img/team/team-2.jpg" className="img-fluid rounded" alt="..." />
+                    <img src="img/team/team-2.jpeg" className="img-fluid rounded" alt="..." />
                     <div className="social">
                       <a href="#"><i className="bi bi-twitter" /></a>
                       <a href="#"><i className="bi bi-facebook" /></a>
@@ -569,42 +552,8 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Sarah Jhonson</h4>
-                    <span>Product Manager</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div className="member" data-aos="fade-up" data-aos-delay={300}>
-                  <div className="member-img">
-                    <img src="img/team/team-3.jpg" className="img-fluid rounded" alt="..." />
-                    <div className="social">
-                      <a href="#"><i className="bi bi-twitter" /></a>
-                      <a href="#"><i className="bi bi-facebook" /></a>
-                      <a href="#"><i className="bi bi-instagram" /></a>
-                      <a href="#"><i className="bi bi-linkedin" /></a>
-                    </div>
-                  </div>
-                  <div className="member-info">
-                    <h4>William Anderson</h4>
-                    <span>CTO</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div className="member" data-aos="fade-up" data-aos-delay={400}>
-                  <div className="member-img">
-                    <img src="img/team/team-4.jpg" className="img-fluid rounded" alt="..." />
-                    <div className="social">
-                      <a href="#"><i className="bi bi-twitter" /></a>
-                      <a href="#"><i className="bi bi-facebook" /></a>
-                      <a href="#"><i className="bi bi-instagram" /></a>
-                      <a href="#"><i className="bi bi-linkedin" /></a>
-                    </div>
-                  </div>
-                  <div className="member-info">
-                    <h4>Amanda Jepson</h4>
-                    <span>Accountant</span>
+                    <h4>Lic. Ezequiel Reyes Quezada</h4>
+                    <span>Vice Presidente</span>
                   </div>
                 </div>
               </div>
@@ -798,7 +747,7 @@ export default function Home() {
                   <div>
                     <i className="ri-map-pin-line" />
                     <p>
-                      C/ 3ra #35-A, Ensanche Isabelita,
+                      C/ 3ra #35 A, Ensanche Isabelita,
                       <br />
                       Santo Domingo Este, Rep. Dom.
                     </p>
