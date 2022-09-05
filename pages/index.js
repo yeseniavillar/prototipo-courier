@@ -40,25 +40,25 @@ export default function Home() {
           <nav id="navbar" className="navbar">
             <ul>
               <li>
-                <a className="nav-link scrollto active" href="#hero">Inicio</a>
+                <a className="nav-link scrollto active" href="#hero">INICIO</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#about">Nosotros</a>
+                <a className="nav-link scrollto" href="#about">NOSOTROS</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#services">Servicios</a>
+                <a className="nav-link scrollto" href="#services">SOLUCIONES</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#team">Equipo</a>
+                <a className="nav-link scrollto" href="#team">EQUIPO</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#pricing">Precios</a>
+                <a className="nav-link scrollto" href="#pricing">PRECIOS</a>
               </li>
               <li>
-                <a className="nav-link scrollto text-success" href="#">Hazte Socio</a>
+                <a className="nav-link scrollto text-success" href="#">HAZTE SOCIO</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#contact">Contacto</a>
+                <a className="nav-link scrollto" href="#contact">CONTACTO</a>
               </li>
               <li>
                 <a className="getstarted scrollto" href="#about">
@@ -79,7 +79,7 @@ export default function Home() {
             <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
               <h1 data-aos="fade-up">Tus paquetes llegan a todo el <span className="text-primary">país</span><i className="bi bi-geo-alt" /></h1>
               <h2 data-aos="fade-up" data-aos-delay={400}>
-                Ofrecemos un plan logístico, para satisfacer los requerimientos de nuestros clientes
+                Ofrecemos un plan logístico para satisfacer las necesidades de nuestros clientes
               </h2>
               <div data-aos="fade-up" data-aos-delay={800}>
                 <a href="#about" className="btn-get-started scrollto">
@@ -125,32 +125,31 @@ export default function Home() {
         <section id="about" className="about">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
-              <h2>Sobre Nosotros</h2>
+              <h2>¿Quiénes Somos?</h2>
             </div>
             <div className="row content">
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay={150}>
                 <p>
-                  Es una empresa de servicios aduanales  aéreos , marítimos & terrestres internacional de carga,
-                  exportación e importación de mercancía.
+                  Somos un OPERADOR LOGÍSTICO atentos a satisfacer las necesidades de la comunidad local, nacional e internacional
+                  en los servicios de:
                 </p>
                 <ul>
                   <li>
-                    <i className="ri-check-double-line" /> Declaración de mercancías.
+                    <i className="ri-check-double-line" /> Transporte de Carga.
                   </li>
                   <li>
-                    <i className="ri-check-double-line" /> Liquidación y pago de impuestos aduanales.
+                    <i className="ri-check-double-line" /> Mudanza.
                   </li>
                   <li>
-                    <i className="ri-check-double-line" /> Inspección y Verificación.
+                    <i className="ri-check-double-line" /> Courier y Almacenaje.
                   </li>
                 </ul>
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay={300} >
                 <p>
-                  Nace con el objetivo principal de satisfacer las necesidades existentes en el área, tales como:
-                  <strong> Declaración de mercancías; Inspección; Verificación; Liquidación y Pago de impuestos aduanales.</strong>
+                  Nos caracterizamos por brindar servicios de courier con tiempo de entrega más rápido, por tanto, muchas empresas confían en nosotros.
                 </p>
-                <a href="#contact" className="btn-learn-more"><i className="bi bi-hand-index"/> Haz una Sugerencia </a>
+                <a href="#contact" className="btn-learn-more"><i className="bi bi-hand-index" /> Haz una Sugerencia </a>
               </div>
             </div>
           </div>
@@ -171,7 +170,7 @@ export default function Home() {
                         <i className="bi bi-globe" />
                         <span data-purecounter-start={0} data-purecounter-end={65} data-purecounter-duration={1} className="purecounter" />
                         <p>
-                          <strong>MISIÓN <br/></strong> Ofrecer servicios aduanales con calidad, seguridad y profesionalismo a importadores y exportadores.
+                          <strong>MISIÓN <br /></strong> Ofrecer servicios aduanales con calidad, seguridad y profesionalismo a importadores y exportadores.
                         </p>
                       </div>
                     </div>
@@ -180,7 +179,7 @@ export default function Home() {
                         <i className="bi bi-journal-richtext" />
                         <span data-purecounter-start={0} data-purecounter-end={85} data-purecounter-duration={1} className="purecounter" />
                         <p>
-                          <strong>VISIÓN <br/></strong> Constituirnos en socios de nuestros clientes, entender sus necesidades
+                          <strong>VISIÓN <br /></strong> Constituirnos en socios de nuestros clientes, entender sus necesidades
                           y satisfacer cada una de ellas mediante una respuesta rápida en el trámite de sus mercancías.
                         </p>
                       </div>
@@ -190,7 +189,7 @@ export default function Home() {
                         <i className="bi bi-heart" />
                         <span data-purecounter-start={0} data-purecounter-end={18} data-purecounter-duration={1} className="purecounter" />
                         <p>
-                          <strong>VALORES <br/></strong> 
+                          <strong>VALORES <br /></strong>
                           <ul>
                             <li>Voluntad Empresarial</li>
                             <li>Respeto</li>
@@ -211,7 +210,7 @@ export default function Home() {
         <section id="services" className="services">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
-              <h2>Servicios</h2>
+              <h2>SOLUCIONES</h2>
               <p>Ofrecemos un plan logístico, para satisfacer los requerimientos de nuestros clientes en todo lo
                 relacionado con el comercio internacional, brindando el mejor servicio al más bajo costo.</p>
             </div>
@@ -219,10 +218,10 @@ export default function Home() {
               <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div className="icon-box" data-aos="fade-up" data-aos-delay={100}>
                   <div className="icon">
-                    <i className="bi bi-card-checklist" />
+                    <i className="bi bi-send-check" />
                   </div>
                   <h4 className="title">
-                    <a href="">Registro único aduanero (RUA)</a>
+                    <a href="">Importación / Exportación</a>
                   </h4>
                   <p className="description">
                     Voluptatum deleniti atque corrupti quos dolores et quas
@@ -233,10 +232,10 @@ export default function Home() {
               <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div className="icon-box" data-aos="fade-up" data-aos-delay={200}>
                   <div className="icon">
-                    <i className="bi bi-search" />
+                    <i className="bi bi-truck" />
                   </div>
                   <h4 className="title">
-                    <a href="">Inspección</a>
+                    <a href="">Transporte y Transporte de Carga</a>
                   </h4>
                   <p className="description">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse
