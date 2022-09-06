@@ -83,7 +83,7 @@ export default function Home() {
               </h2>
               <div data-aos="fade-up" data-aos-delay={800}>
                 <button className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i className="bi bi-search"/> Rastrea tu paquete
+                  <i className="bi bi-search" /> Rastrea tu paquete
                 </button>
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay={150} >
-                <img src="img/counts-img.jpg" alt="..." className="img-thumbnail rounded" />
+                <img src="img/counts-img.jpg" alt="..." className="img-thumbnail shadow" />
               </div>
               <div className="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay={300} >
                 <div className="content d-flex flex-column justify-content-center">
@@ -646,24 +646,28 @@ export default function Home() {
       {/* End Footer */}
 
       <Fragment>
-        <div className="modal" tabIndex="-1">
+        <div className="modal text-center" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title">Modal title</h5>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div className="modal-body">
-                <p>Modal body text goes here.</p>
+                <div className="card" style={{width: "18rem"}}>
+                  <img src="img/rastrear.png" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title">Rastrea tu paquete:</h5>
+                      <input type="text" className="form-control mb-3" placeholder="Numero de tracking" />
+                      <a href="#" className="btn btn-outline-primary"><i className="bi bi-search"/> Rastrear</a>
+                    </div>
+                </div>
               </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" className="btn btn-primary">Save changes</button>
+              <div className="modal-footer text-center">
+                <p>Presentar el rastrear aqui</p>
               </div>
             </div>
           </div>
         </div>
-
       </Fragment>
 
       {/* <!-- Vendor JS Files --> */}
