@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 export default function Home() {
   return (
@@ -46,13 +46,13 @@ export default function Home() {
                 <a className="nav-link scrollto" href="#about">NOSOTROS</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#services">SOLUCIONES</a>
+                <a className="nav-link scrollto" href="#services">SERVICIOS</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#team">EQUIPO</a>
+                <a target="_blank" className="nav-link scrollto" href="https://www.aduanas.gob.do/de-interes/consultas/registro-courier">REGISTRO RUA</a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#pricing">PRECIOS</a>
+                <a className="nav-link scrollto" href="#pricing">AVISO DGA</a>
               </li>
               <li>
                 <a className="nav-link scrollto text-success" href="#">HAZTE SOCIO</a>
@@ -77,14 +77,14 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-              <h1 data-aos="fade-up">Tus paquetes llegan a todo el <span className="text-primary">país</span><i className="bi bi-geo-alt" /></h1>
+              <h1 data-aos="fade-up">Sus paquetes llegan a todo el <span className="text-primary">país</span><i className="bi bi-geo-alt" /></h1>
               <h2 data-aos="fade-up" data-aos-delay={400}>
                 Ofrecemos un plan logístico para satisfacer las necesidades de nuestros clientes
               </h2>
               <div data-aos="fade-up" data-aos-delay={800}>
-                <a href="#about" className="btn-get-started scrollto">
-                  <i className="bi bi-search" /> Rastrea tu paquete
-                </a>
+                <button className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i className="bi bi-search"/> Rastrea tu paquete
+                </button>
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay={200} >
@@ -125,7 +125,7 @@ export default function Home() {
         <section id="about" className="about">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
-              <h2>¿Quiénes Somos?</h2>
+              <h2><span className="text-primary">¿Quiénes</span> Somos?</h2>
             </div>
             <div className="row content">
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay={150}>
@@ -210,7 +210,7 @@ export default function Home() {
         <section id="services" className="services">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
-              <h2>SOLUCIONES</h2>
+              <h2><span className="text-primary">NUESTROS</span> SERVICIOS</h2>
               <p>Ofrecemos un plan logístico, para satisfacer los requerimientos de nuestros clientes en todo lo
                 relacionado con el comercio internacional, brindando el mejor servicio al más bajo costo.</p>
             </div>
@@ -275,81 +275,6 @@ export default function Home() {
           </div>
         </section>
         {/* End Services Section */}
-        {/* ======= More Services Section ======= */}
-        <section id="more-services" className="more-services">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6 d-flex align-items-stretch">
-                <div className="card" style={{ backgroundImage: 'url("img/more-services-1.jpg")' }} data-aos="fade-up" data-aos-delay={100}>
-                  <div className="card-body">
-                    <h5 className="card-title">
-                      <a href="">Logística</a>
-                    </h5>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-                      tempor ut labore et dolore magna aliqua.
-                    </p>
-                    <div className="read-more">
-                      <a href="#">
-                        <i className="bi bi-arrow-right" /> Leer mas
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                <div className="card" style={{ backgroundImage: 'url("img/more-services-2.jpg")' }} data-aos="fade-up" data-aos-delay={200}>
-                  <div className="card-body">
-                    <h5 className="card-title">
-                      <a href="">Seguridad</a>
-                    </h5>
-                    <p className="card-text">
-                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                      doloremque laudantium, totam rem.
-                    </p>
-                    <div className="read-more">
-                      <a href="#">
-                        <i className="bi bi-arrow-right" /> Leer mas
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 d-flex align-items-stretch mt-4">
-                <div className="card" style={{ backgroundImage: 'url("img/more-services-3.jpg")' }} data-aos="fade-up" data-aos-delay={100}>
-                  <div className="card-body">
-                    <h5 className="card-title">
-                      <a href="">Delivery</a>
-                    </h5>
-                    <p className="card-text">
-                      Te llevamos tus paquetes hasta la puerta de tu hogar, sin costo adicional.
-                    </p>
-                    <div className="read-more">
-                      <a href="#"><i className="bi bi-arrow-right" /> Leer mas </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 d-flex align-items-stretch mt-4">
-                <div className="card" style={{ backgroundImage: 'url("img/more-services-4.jpg")' }} data-aos="fade-up" data-aos-delay={200} >
-                  <div className="card-body">
-                    <h5 className="card-title">
-                      <a href="">Soporte 24/7</a>
-                    </h5>
-                    <p className="card-text">
-                      Nostrum eum sed et autem dolorum perspiciatis. Magni porro
-                      quisquam laudantium voluptatem.
-                    </p>
-                    <div className="read-more">
-                      <a href="#"><i className="bi bi-arrow-right" /> Leer mas </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* End More Services Section */}
         {/* ======= Features Section ======= */}
         <section id="features" className="features">
           <div className="container">
@@ -410,227 +335,129 @@ export default function Home() {
           </div>
         </section>
         {/* End Features Section */}
-        {/* ======= Testimonials Section ======= */}
+        {/* ======= Blog Section ======= */}
         <section id="testimonials" className="testimonials section-bg">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
-              <h2>Testimonios</h2>
-              <p>Magnam dolores commodi suscipit eum quidem consectetur velit</p>
+              <h2><span className="text-primary">RE&RAM</span> | Blog</h2>
+              <p>Mantente actualizado con las noticias más recientes sobre Courier</p>
             </div>
-            <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay={100}>
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="testimonial-wrap">
-                    <div className="testimonial-item">
-                      <img src="img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                      <p>
-                        <i className="bx bxs-quote-alt-left quote-icon-left" />
-                        Proin iaculis purus consequat sem cure digni ssim donec
-                        porttitora entum suscipit rhoncus. Accusantium quam,
-                        ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                        risus at semper.
-                        <i className="bx bxs-quote-alt-right quote-icon-right" />
-                      </p>
+            {/* ======= More Services Section ======= */}
+            <section id="more-services" className="more-services">
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-6 d-flex align-items-stretch">
+                    <div className="card" style={{ backgroundImage: 'url("img/more-services-1.jpg")' }} data-aos="fade-up" data-aos-delay={100}>
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <a href="">Noticia 1</a>
+                        </h5>
+                        <p className="card-text">
+                          Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                          tempor ut labore et dolore magna aliqua.
+                        </p>
+                        <div className="read-more">
+                          <a href="#"><i className="bi bi-arrow-right" /> Leer mas</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                    <div className="card" style={{ backgroundImage: 'url("img/more-services-2.jpg")' }} data-aos="fade-up" data-aos-delay={200}>
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <a href="">Noticia 2</a>
+                        </h5>
+                        <p className="card-text">
+                          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                          doloremque laudantium, totam rem.
+                        </p>
+                        <div className="read-more">
+                          <a href="#"><i className="bi bi-arrow-right" /> Leer mas</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 d-flex align-items-stretch mt-4">
+                    <div className="card" style={{ backgroundImage: 'url("img/more-services-3.jpg")' }} data-aos="fade-up" data-aos-delay={100}>
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <a href="">Noticia 3</a>
+                        </h5>
+                        <p className="card-text">
+                          Te llevamos tus paquetes hasta la puerta de tu hogar, sin costo adicional.
+                        </p>
+                        <div className="read-more">
+                          <a href="#"><i className="bi bi-arrow-right" /> Leer mas</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 d-flex align-items-stretch mt-4">
+                    <div className="card" style={{ backgroundImage: 'url("img/more-services-4.jpg")' }} data-aos="fade-up" data-aos-delay={200} >
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <a href="">Noticia 4</a>
+                        </h5>
+                        <p className="card-text">
+                          Nostrum eum sed et autem dolorum perspiciatis. Magni porro
+                          quisquam laudantium voluptatem.
+                        </p>
+                        <div className="read-more">
+                          <a href="#"><i className="bi bi-arrow-right" /> Leer mas </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                {/* End testimonial item */}
-                <div className="swiper-slide">
-                  <div className="testimonial-wrap">
-                    <div className="testimonial-item">
-                      <img src="img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="" />
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
-                      <p>
-                        <i className="bx bxs-quote-alt-left quote-icon-left" />
-                        Export tempor illum tamen malis malis eram quae irure esse
-                        labore quem cillum quid cillum eram malis quorum velit fore
-                        eram velit sunt aliqua noster fugiat irure amet legam anim
-                        culpa.
-                        <i className="bx bxs-quote-alt-right quote-icon-right" />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* End testimonial item */}
-                <div className="swiper-slide">
-                  <div className="testimonial-wrap">
-                    <div className="testimonial-item">
-                      <img src="img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="" />
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
-                      <p>
-                        <i className="bx bxs-quote-alt-left quote-icon-left" />
-                        Enim nisi quem export duis labore cillum quae magna enim
-                        sint quorum nulla quem veniam duis minim tempor labore quem
-                        eram duis noster aute amet eram fore quis sint minim.
-                        <i className="bx bxs-quote-alt-right quote-icon-right" />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* End testimonial item */}
-                <div className="swiper-slide">
-                  <div className="testimonial-wrap">
-                    <div className="testimonial-item">
-                      <img src="img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="..." />
-                      <h3>Matt Brandon</h3>
-                      <h4>Freelancer</h4>
-                      <p>
-                        <i className="bx bxs-quote-alt-left quote-icon-left" />
-                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                        multos export minim fugiat minim velit minim dolor enim duis
-                        veniam ipsum anim magna sunt elit fore quem dolore labore
-                        illum veniam.
-                        <i className="bx bxs-quote-alt-right quote-icon-right" />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* End testimonial item */}
-                <div className="swiper-slide">
-                  <div className="testimonial-wrap">
-                    <div className="testimonial-item">
-                      <img src="img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="..." />
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                      <p>
-                        <i className="bx bxs-quote-alt-left quote-icon-left" />
-                        Quis quorum aliqua sint quem legam fore sunt eram irure
-                        aliqua veniam tempor noster veniam enim culpa labore duis
-                        sunt culpa nulla illum cillum fugiat legam esse veniam culpa
-                        fore nisi cillum quid.
-                        <i className="bx bxs-quote-alt-right quote-icon-right" />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* End testimonial item */}
               </div>
-              <div className="swiper-pagination" />
-            </div>
+            </section>
+            {/* End More Services Section */}
           </div>
         </section>
-        {/* End Testimonials Section */}
-        {/* ======= Team Section ======= */}
+        {/* End Blog Section */}
+        {/* ======= sesion 2 Section ======= */}
         <section id="team" className="team section-bg">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
-              <h2>Equipo</h2>
+              <h2><span className="text-primary">NUESTRAS</span> SUCURSALES</h2>
               <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
             </div>
-            <div className="row">
-              <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div className="member" data-aos="fade-up" data-aos-delay={100}>
-                  <div className="member-img">
-                    <img src="img/team/team-1.jpeg" className="img-fluid rounded" alt="...." />
-                    <div className="social">
-                      <a href="#"><i className="bi bi-twitter" /></a>
-                      <a href="#"><i className="bi bi-facebook" /></a>
-                      <a href="#"><i className="bi bi-instagram" /></a>
-                      <a href="#"><i className="bi bi-linkedin" /></a>
-                    </div>
-                  </div>
-                  <div className="member-info">
-                    <h4> Lic. Fernando Ramírez Vargas</h4>
-                    <span>Presidente, CEO</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div className="member" data-aos="fade-up" data-aos-delay={200}>
-                  <div className="member-img">
-                    <img src="img/team/team-2.jpeg" className="img-fluid rounded" alt="..." />
-                    <div className="social">
-                      <a href="#"><i className="bi bi-twitter" /></a>
-                      <a href="#"><i className="bi bi-facebook" /></a>
-                      <a href="#"><i className="bi bi-instagram" /></a>
-                      <a href="#"><i className="bi bi-linkedin" /></a>
-                    </div>
-                  </div>
-                  <div className="member-info">
-                    <h4>Lic. Ezequiel Reyes Quezada</h4>
-                    <span>Vice Presidente</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </section>
-        {/* End Team Section */}
-        {/* ======= Pricing Section ======= */}
+        {/* End sesion 2 Section */}
+        {/* ======= RUA Section ======= */}
         <section id="pricing" className="pricing">
           <div className="container">
             <div className="section-title">
-              <h2>Precios</h2>
-              <p>Con los mejores precios disponibles actualmente en todo el pais</p>
+              <h2><span className="text-primary">AVISO</span> DGA</h2>
+              <p><strong>Socializado con los Courier, lo establece la Norma 01-2018</strong></p>
             </div>
-            <div className="row">
-              <div className="col-lg-4 col-md-6">
-                <div className="box" data-aos="zoom-in-right" data-aos-delay={200}>
-                  <h3>Gratis</h3>
-                  <h4>
-                    <sup>$</sup>0<span> / mes</span>
-                  </h4>
-                  <ul>
-                    <li>Aida dere</li>
-                    <li>Nec feugiat nisl</li>
-                    <li>Nulla at volutpat dola</li>
-                    <li className="na">Pharetra massa</li>
-                    <li className="na">Massa ultricies mi</li>
-                  </ul>
-                  <div className="btn-wrap">
-                    <a href="#" className="btn-buy">Comprar</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 mt-4 mt-md-0">
-                <div className="box recommended" data-aos="zoom-in" data-aos-delay={100} >
-                  <h3>Corporativo</h3>
-                  <h4>
-                    <sup>$</sup>19<span> / mes</span>
-                  </h4>
-                  <ul>
-                    <li>Aida dere</li>
-                    <li>Nec feugiat nisl</li>
-                    <li>Nulla at volutpat dola</li>
-                    <li>Pharetra massa</li>
-                    <li className="na">Massa ultricies mi</li>
-                  </ul>
-                  <div className="btn-wrap">
-                    <a href="#" className="btn-buy">Comprar</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                <div className="box" data-aos="zoom-in-left" data-aos-delay={200}>
-                  <h3>Premium</h3>
-                  <h4>
-                    <sup>$</sup>29<span> / mes</span>
-                  </h4>
-                  <ul>
-                    <li>Aida dere</li>
-                    <li>Nec feugiat nisl</li>
-                    <li>Nulla at volutpat dola</li>
-                    <li>Pharetra massa</li>
-                    <li>Massa ultricies mi</li>
-                  </ul>
-                  <div className="btn-wrap">
-                    <a href="#" className="btn-buy">Comprar ahora</a>
-                  </div>
+            <div className="container">
+              <div className="card shadow bg-white rounded">
+                <div className="card-body text-center">
+                  <p>La Dirección General de Aduanas (DGA) inició el proceso del Registro Único Aduanero (RÚA) para todos los usuarios de
+                    servicios Courier, una herramienta que tiene el propósito de salvaguardar los derechos del usuario y agilizar el
+                    despacho de sus compras por internet.</p>
+                  <p>Con el RÚA se busca diferenciar a quienes utilizan este canal con fines comerciales de aquellos que lo hacen para
+                    sus compras personales, únicas beneficiadas del tope “de minimis” libres de impuestos de hasta US$200 (Doscientos Dólares Norteamericanos),
+                    contemplada en el Decreto 402-05, que aprueba el Reglamento para el Despacho Expreso de Envíos.</p>
+                  <p>El Registro Único Aduanero fue establecido en la Norma 01-2018, que regula el fraccionamiento de mercancías para fines comerciales a
+                    través de empresas Courier, puesta en vigor en febrero de 2018. La DGA sometió la Norma 01-2018 a un proceso abierto de consultas
+                    públicas por varios meses, durante el que se recibieron y consideraron las opiniones de los usuarios y de las mismas empresas que
+                    ofrecen el servicio, hasta emitir el documento final.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* End Pricing Section */}
+        {/* End RUA Section */}
         {/* ======= F.A.Q Section ======= */}
         <section id="faq" className="faq">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
-              <h2>Preguntas Frecuentes</h2>
+              <h2><span className="text-primary">Preguntas</span> Frecuentes</h2>
             </div>
             <div className="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay={100} >
               <div className="col-lg-5">
@@ -817,6 +644,27 @@ export default function Home() {
         </div>
       </footer>
       {/* End Footer */}
+
+      <Fragment>
+        <div className="modal" tabIndex="-1">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Modal title</h5>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div className="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" className="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </Fragment>
 
       {/* <!-- Vendor JS Files --> */}
       <script src="vendor/purecounter/purecounter_vanilla.js" />
