@@ -156,7 +156,7 @@ export default function Home() {
                   Nos caracterizamos por brindar servicios de courier con tiempo de entrega más rápido, por tanto, muchas empresas confían en nosotros.
                 </p>
                 <div className="row">
-                  <div className="col"><a href="#contact" className="btn-learn-more"><i className="bi bi-hand-index" /> Haz una Sugerencia </a></div>
+                  <div className="col"><a href="#contact" className="btn-learn-more"><i className="bi bi-hand-index" /> Sugerencia </a></div>
                   <div className="col"><a target={"blank"} href="https://forms.gle/PaTBiSDsqhQdUNqh9" className="btn-learn-more"><i className="bi bi-person" /> Hazte Socio </a></div>
                 </div>
               </div>
@@ -438,7 +438,7 @@ export default function Home() {
                   <div className="card shadow">
                     <img src="img/sucursal2.jpg" className="card-img-top" alt="..." />
                     <div className="card-body">
-                      <h5 className="card-title">Sucursal 1</h5>
+                      <h5 className="card-title">La Romana</h5>
                       <p className="card-text"><i className="bi bi-geo-alt" /> Dirección:</p>
                       <p>C/ 3ra #35 A, Ensanche Isabelita, Santo Domingo Este, Rep. Dom.</p>
                       <p className="card-text"><i className="bi bi-telephone" /> Teléfono:</p>
@@ -462,7 +462,7 @@ export default function Home() {
                   <div className="card shadow">
                     <img src="img/sucursal3.jpg" className="card-img-top" alt="..." />
                     <div className="card-body">
-                      <h5 className="card-title">Sucursal 3</h5>
+                      <h5 className="card-title">Gazcue</h5>
                       <p className="card-text"><i className="bi bi-geo-alt" /> Dirección:</p>
                       <p>C/ 3ra #35 A, Ensanche Isabelita, Santo Domingo Este, Rep. Dom.</p>
                       <p className="card-text"><i className="bi bi-telephone" /> Teléfono:</p>
