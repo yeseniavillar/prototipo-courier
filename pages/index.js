@@ -12,30 +12,24 @@ export default function Home() {
       <link href="img/favicon.png" rel="icon" />
       <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
       {/* Google Fonts */}
-      <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet"
-      />
+      <link href={"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"} rel="stylesheet" />
       {/* Vendor CSS Files */}
-      <link href="vendor/aos/aos.css" rel="stylesheet" />
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-      <link
-        href="vendor/bootstrap-icons/bootstrap-icons.css"
-        rel="stylesheet"
-      />
-      <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-      <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-      <link href="vendor/remixicon/remixicon.css" rel="stylesheet" />
-      <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+      <link href={"vendor/aos/aos.css"} rel="stylesheet" />
+      <link href={"vendor/bootstrap/css/bootstrap.min.css"} rel="stylesheet" />
+      <link href={"vendor/bootstrap-icons/bootstrap-icons.css"} rel="stylesheet" />
+      <link href={"vendor/boxicons/css/boxicons.min.css"} rel="stylesheet" />
+      <link href={"vendor/glightbox/css/glightbox.min.css"} rel="stylesheet" />
+      <link href={"vendor/remixicon/remixicon.css"} rel="stylesheet" />
+      <link href={"vendor/swiper/swiper-bundle.min.css"} rel="stylesheet" />
 
       {/* Template Main CSS File */}
-      <link href="css/style.css" rel="stylesheet" />
+      <link href={"css/style.css"} rel="stylesheet" />
 
       {/* ======= Header ======= */}
       <header id="header" className="fixed-top d-flex align-items-center">
         <div className="container d-flex align-items-center justify-content-between">
           <div className="logo">
-            <h1><a href="#hero">RE&RAM</a></h1>
+            <h1><a href="#hero">RE<span className="text-primary">&</span>RAM</a></h1>
           </div>
           <nav id="navbar" className="navbar">
             <ul>
@@ -49,13 +43,13 @@ export default function Home() {
                 <a className="nav-link scrollto" href="#services">SERVICIOS</a>
               </li>
               <li>
-                <a target="_blank" className="nav-link scrollto" href="https://www.aduanas.gob.do/de-interes/consultas/registro-courier">REGISTRO RUA</a>
+                <a target={"blank"} className="nav-link scrollto" href="https://www.aduanas.gob.do/de-interes/consultas/registro-courier">REGISTRO RUA</a>
               </li>
               <li>
                 <a className="nav-link scrollto" href="#pricing">AVISO DGA</a>
               </li>
               <li>
-                <a className="nav-link scrollto text-success" href="#">HAZTE SOCIO</a>
+                <a target={"target"} className="nav-link scrollto text-success" href="https://forms.gle/PaTBiSDsqhQdUNqh9">HAZTE SOCIO</a>
               </li>
               <li>
                 <a className="nav-link scrollto" href="#contact">CONTACTO</a>
@@ -88,7 +82,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay={200} >
-              <img src="img/hero-img.png" className="img-fluid animated" alt="..." />
+              <img src={"img/hero-img.png"} className="img-fluid animated" alt="..." />
             </div>
           </div>
         </div>
@@ -161,7 +155,10 @@ export default function Home() {
                 <p>
                   Nos caracterizamos por brindar servicios de courier con tiempo de entrega más rápido, por tanto, muchas empresas confían en nosotros.
                 </p>
-                <a href="#contact" className="btn-learn-more"><i className="bi bi-hand-index" /> Haz una Sugerencia </a>
+                <div className="row">
+                  <div className="col"><a href="#contact" className="btn-learn-more"><i className="bi bi-hand-index" /> Haz una Sugerencia </a></div>
+                  <div className="col"><a target={"blank"} href="https://forms.gle/PaTBiSDsqhQdUNqh9" className="btn-learn-more"><i className="bi bi-person" /> Hazte Socio </a></div>
+                </div>
               </div>
             </div>
           </div>
@@ -188,7 +185,7 @@ export default function Home() {
                     </div>
                     <div className="col-md-6 d-md-flex align-items-md-stretch">
                       <div className="count-box">
-                        <i className="bi bi-journal-richtext" />
+                        <i className="bi bi-eye" />
                         <span data-purecounter-start={0} data-purecounter-end={85} data-purecounter-duration={1} className="purecounter" />
                         <p>
                           <strong>VISIÓN <br /></strong> Constituirnos en socios de nuestros clientes, entender sus necesidades
@@ -230,7 +227,7 @@ export default function Home() {
               <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div className="icon-box" data-aos="fade-up" data-aos-delay={100}>
                   <div className="icon">
-                    <i className="bi bi-send-check" />
+                    <i className="bi bi-airplane" />
                   </div>
                   <h4 className="title">
                     <a href="">Importación / Exportación</a>
@@ -351,7 +348,7 @@ export default function Home() {
         <section id="testimonials" className="testimonials section-bg">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
-              <h2><span className="text-primary">RE&RAM</span> | Blog</h2>
+              <h2>RE<span className="text-primary">&</span>RAM | Blog</h2>
               <p>Mantente actualizado con las noticias más recientes sobre Courier</p>
             </div>
             {/* ======= More Services Section ======= */}
@@ -369,7 +366,7 @@ export default function Home() {
                           tempor ut labore et dolore magna aliqua.
                         </p>
                         <div className="read-more">
-                          <a href="#"><i className="bi bi-arrow-right" /> Leer mas</a>
+                          <a target={"blank"} href="https://reyram2022.blogspot.com/"><i className="bi bi-arrow-right" /> Leer mas</a>
                         </div>
                       </div>
                     </div>
@@ -385,7 +382,7 @@ export default function Home() {
                           doloremque laudantium, totam rem.
                         </p>
                         <div className="read-more">
-                          <a href="#"><i className="bi bi-arrow-right" /> Leer mas</a>
+                          <a target={"blank"} href="https://reyram2022.blogspot.com/"><i className="bi bi-arrow-right" /> Leer mas</a>
                         </div>
                       </div>
                     </div>
@@ -400,7 +397,7 @@ export default function Home() {
                           Te llevamos tus paquetes hasta la puerta de tu hogar, sin costo adicional.
                         </p>
                         <div className="read-more">
-                          <a href="#"><i className="bi bi-arrow-right" /> Leer mas</a>
+                          <a target={"blank"} href="https://reyram2022.blogspot.com/"><i className="bi bi-arrow-right" /> Leer mas</a>
                         </div>
                       </div>
                     </div>
@@ -428,17 +425,56 @@ export default function Home() {
           </div>
         </section>
         {/* End Blog Section */}
-        {/* ======= sesion 2 Section ======= */}
+        {/* ======= sucursales Section ======= */}
         <section id="team" className="team section-bg">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
               <h2><span className="text-primary">NUESTRAS</span> SUCURSALES</h2>
               <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
             </div>
-
+            <div className="container text-center">
+              <div className="row">
+                <div className="col">
+                  <div className="card shadow">
+                    <img src="img/sucursal2.jpg" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title">Sucursal 1</h5>
+                      <p className="card-text"><i className="bi bi-geo-alt" /> Dirección:</p>
+                      <p>C/ 3ra #35 A, Ensanche Isabelita, Santo Domingo Este, Rep. Dom.</p>
+                      <p className="card-text"><i className="bi bi-telephone" /> Teléfono:</p>
+                      <p>(809) 868-3129 / +1 (929) 375-2165</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="card shadow">
+                    <img src="img/sucursal1.jpg" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title">Oficina Principal</h5>
+                      <p className="card-text"><i className="bi bi-geo-alt" /> Dirección:</p>
+                      <p>C/ 3ra #35 A, Ensanche Isabelita, Santo Domingo Este, Rep. Dom.</p>
+                      <p className="card-text"><i className="bi bi-telephone" /> Teléfono:</p>
+                      <p>(809) 868-3129 / +1 (929) 375-2165</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="card shadow">
+                    <img src="img/sucursal3.jpg" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title">Sucursal 3</h5>
+                      <p className="card-text"><i className="bi bi-geo-alt" /> Dirección:</p>
+                      <p>C/ 3ra #35 A, Ensanche Isabelita, Santo Domingo Este, Rep. Dom.</p>
+                      <p className="card-text"><i className="bi bi-telephone" /> Teléfono:</p>
+                      <p>(809) 868-3129 / +1 (929) 375-2165</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        {/* End sesion 2 Section */}
+        {/* End sucursales Section */}
         {/* ======= RUA Section ======= */}
         <section id="pricing" className="pricing">
           <div className="container">
@@ -449,7 +485,7 @@ export default function Home() {
             <div className="container">
               <div className="card shadow bg-white rounded">
                 <div className="card-body text-center">
-                  <p>La Dirección General de Aduanas (DGA) inició el proceso del Registro Único Aduanero (RÚA) para todos los usuarios de
+                  <p><i className="bi bi-info-circle-fill" /> La Dirección General de Aduanas (DGA) inició el proceso del Registro Único Aduanero (RÚA) para todos los usuarios de
                     servicios Courier, una herramienta que tiene el propósito de salvaguardar los derechos del usuario y agilizar el
                     despacho de sus compras por internet.</p>
                   <p>Con el RÚA se busca diferenciar a quienes utilizan este canal con fines comerciales de aquellos que lo hacen para
@@ -560,10 +596,11 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={100} >
                 <div className="contact-about">
-                  <h3>RE&RAM</h3>
+                  <h3>RE<span className="text-primary">&</span>RAM</h3>
                   <p>
                     Es una empresa de servicios aduanales aéreos , marítimos y terrestres internacionales de carga, exportación e importación de mercancía.
                   </p>
+                  <h6>Síguenos en:</h6>
                   <div className="social-links">
                     <a href="#" className="twitter">
                       <i className="bi bi-twitter" />
@@ -641,7 +678,7 @@ export default function Home() {
           <div className="row d-flex align-items-center">
             <div className="col-lg-6 text-lg-left text-center">
               <div className="copyright">
-                © 2022 <strong>RE&RAM</strong>. Todos los derechos reservados
+                © 2022 <strong>RE<span className="text-primary">&</span>RAM</strong>. Todos los derechos reservados
               </div>
             </div>
             <div className="col-lg-6">
@@ -666,7 +703,7 @@ export default function Home() {
               </div>
               <div className="modal-body">
                 <div className="card" >
-                  <img src="img/rastrear.png" className="card-img-top" alt="..." />
+                  <img src={"img/rastrear.png"} className="card-img-top" alt="..." />
                   <div className="card-body">
                     <h5 className="card-title">Rastrea tu paquete:</h5>
                     <input type="text" className="form-control mb-3" placeholder="Numero de tracking" />
@@ -683,16 +720,16 @@ export default function Home() {
       </Fragment>
 
       {/* <!-- Vendor JS Files --> */}
-      <script src="vendor/purecounter/purecounter_vanilla.js" />
-      <script src="vendor/aos/aos.js" />
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" />
-      <script src="vendor/glightbox/js/glightbox.min.js" />
-      <script src="vendor/isotope-layout/isotope.pkgd.min.js" />
-      <script src="vendor/swiper/swiper-bundle.min.js" />
-      <script src="vendor/php-email-form/validate.js" />
+      <script src={"vendor/purecounter/purecounter_vanilla.js"} />
+      <script src={"vendor/aos/aos.js"} />
+      <script src={"vendor/bootstrap/js/bootstrap.bundle.min.js"} />
+      <script src={"vendor/glightbox/js/glightbox.min.js"} />
+      <script src={"vendor/isotope-layout/isotope.pkgd.min.js"} />
+      <script src={"vendor/swiper/swiper-bundle.min.js"} />
+      <script src={"vendor/php-email-form/validate.js"} />
 
       {/* <!-- Template Main JS File --> */}
-      <script src="js/main.js" />
+      <script src={"js/main.js"} />
     </>
   )
 } 
