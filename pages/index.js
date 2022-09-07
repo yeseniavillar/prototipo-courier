@@ -100,22 +100,34 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-lg-2 col-md-4 col-6">
-                <img src="img/clients/client-1.png" className="img-fluid" alt="" data-aos="zoom-in" />
+                <a target="_blank" href="https://www.amazon.com/">
+                  <img src="img/clients/client-1.png" className="img-fluid" alt="" data-aos="zoom-in" />
+                </a>
               </div>
               <div className="col-lg-2 col-md-4 col-6">
-                <img src="img/clients/client-2.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={100} />
+                <a href="https://www.ebay.com/" target="_blank">
+                  <img src="img/clients/client-2.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={100} />
+                </a>
               </div>
               <div className="col-lg-2 col-md-4 col-6">
-                <img src="img/clients/client-3.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={200} />
+                <a href="https://www.westernunion.com/us/en/home.html" target="_blank">
+                  <img src="img/clients/client-3.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={200} />
+                </a>
               </div>
               <div className="col-lg-2 col-md-4 col-6">
-                <img src="img/clients/client-4.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={300} />
+                <a href="https://best.aliexpress.com/" target="_blank">
+                  <img src="img/clients/client-4.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={300} />
+                </a>
               </div>
               <div className="col-lg-2 col-md-4 col-6">
-                <img src="img/clients/client-5.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={400} />
+                <a href="https://offer.alibaba.com/" target="_blank">
+                  <img src="img/clients/client-5.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={400} />
+                </a>
               </div>
               <div className="col-lg-2 col-md-4 col-6">
-                <img src="img/clients/client-6.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={500} />
+                <a href="https://www.gearbest.com/" target="_blank">
+                  <img src="img/clients/client-6.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={500} />
+                </a>
               </div>
             </div>
           </div>
@@ -653,13 +665,13 @@ export default function Home() {
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div className="modal-body">
-                <div className="card" style={{width: "18rem"}}>
+                <div className="card" >
                   <img src="img/rastrear.png" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                      <h5 className="card-title">Rastrea tu paquete:</h5>
-                      <input type="text" className="form-control mb-3" placeholder="Numero de tracking" />
-                      <a href="#" className="btn btn-outline-primary"><i className="bi bi-search"/> Rastrear</a>
-                    </div>
+                  <div className="card-body">
+                    <h5 className="card-title">Rastrea tu paquete:</h5>
+                    <input type="text" className="form-control mb-3" placeholder="Numero de tracking" />
+                    <a href="#" className="btn btn-outline-primary"><i className="bi bi-search" /> Rastrear</a>
+                  </div>
                 </div>
               </div>
               <div className="modal-footer text-center">
