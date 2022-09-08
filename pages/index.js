@@ -41,11 +41,10 @@ export default function Home() {
         {/* Template Main CSS File */}
         <link href={"css/style.css"} rel="stylesheet" />
       </Head>
-
+      {/* Header section */}
       <Header />
-
+      {/* Hero Section */}
       <Hero />
-
       {/* Main section */}
       <main id="main">
         {/* ======= Clients Section ======= */}
@@ -99,15 +98,9 @@ export default function Home() {
                   en los servicios de:
                 </p>
                 <ul>
-                  <li>
-                    <i className="ri-check-double-line" /> Transporte de Carga.
-                  </li>
-                  <li>
-                    <i className="ri-check-double-line" /> Mudanza.
-                  </li>
-                  <li>
-                    <i className="ri-check-double-line" /> Courier y Almacenaje.
-                  </li>
+                  <li><i className="ri-check-double-line" /> Transporte de Carga.</li>
+                  <li><i className="ri-check-double-line" /> Mudanza.</li>
+                  <li><i className="ri-check-double-line" /> Courier y Almacenaje.</li>
                 </ul>
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay={300} >
@@ -136,7 +129,6 @@ export default function Home() {
                     <div className="col-md-6 d-md-flex align-items-md-stretch">
                       <div className="count-box">
                         <i className="bi bi-globe" />
-                        <span data-purecounter-start={0} data-purecounter-end={65} data-purecounter-duration={1} className="purecounter" />
                         <p>
                           <strong>MISIÓN <br /></strong> Ofrecer servicios aduanales con calidad, seguridad y profesionalismo a importadores y exportadores.
                         </p>
@@ -145,7 +137,6 @@ export default function Home() {
                     <div className="col-md-6 d-md-flex align-items-md-stretch">
                       <div className="count-box">
                         <i className="bi bi-eye" />
-                        <span data-purecounter-start={0} data-purecounter-end={85} data-purecounter-duration={1} className="purecounter" />
                         <p>
                           <strong>VISIÓN <br /></strong> Constituirnos en socios de nuestros clientes, entender sus necesidades
                           y satisfacer cada una de ellas mediante una respuesta rápida en el trámite de sus mercancías.
@@ -155,15 +146,14 @@ export default function Home() {
                     <div className="col-md-6 d-md-flex align-items-md-stretch">
                       <div className="count-box">
                         <i className="bi bi-heart" />
-                        <span data-purecounter-start={0} data-purecounter-end={18} data-purecounter-duration={1} className="purecounter" />
-                        <p>
-                          <strong>VALORES <br /></strong>
+                        <p><strong>VALORES <br /></strong></p>
+                        <div className="container mb-4">
                           <ul>
                             <li>Voluntad Empresarial</li>
                             <li>Respeto</li>
                             <li>Ética Profesional</li>
                           </ul>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -602,16 +592,16 @@ export default function Home() {
               <div className="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay={300} >
                 <form className="php-email-form" >
                   <div className="form-group">
-                    <input type="text" name="name" className="form-control" id="name" placeholder="Nombre completo" required="true" />
+                    <input type="text" name="name" className="form-control" id="name" placeholder="Nombre completo" required />
                   </div>
                   <div className="form-group">
-                    <input type="email" className="form-control" name="email" id="email" placeholder="Tu correo" required="true" />
+                    <input type="email" className="form-control" name="email" id="email" placeholder="Tu correo" required />
                   </div>
                   <div className="form-group">
-                    <input type="text" className="form-control" name="subject" id="subject" placeholder="Asunto" required="true" />
+                    <input type="text" className="form-control" name="subject" id="subject" placeholder="Asunto" required />
                   </div>
                   <div className="form-group">
-                    <textarea className="form-control" name="message" rows={5} placeholder="Mensaje" required="true" defaultValue={""} />
+                    <textarea className="form-control" name="message" rows={5} placeholder="Mensaje" required defaultValue={""} />
                   </div>
                   <div className="my-3">
                     <div className="loading">Cargando</div>
@@ -630,10 +620,8 @@ export default function Home() {
         </section>
         {/* End Contact Section */}
       </main>
-      {/* End #main */}     
-
+      {/* Footer section */}
       <Footer />
-      
       {/* Rastrear modal */}
       <Fragment>
         <div className="modal text-center" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -668,7 +656,7 @@ export default function Home() {
       <script src={"vendor/isotope-layout/isotope.pkgd.min.js"} async />
       <script src={"vendor/swiper/swiper-bundle.min.js"} async />
       {/* <!-- Template Main JS File --> */}
-      <script src={"js/main.js"}  async />
+      <script src={"js/main.js"} async />
     </>
-  )
+  );
 } 
