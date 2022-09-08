@@ -1,8 +1,11 @@
 import React, { Fragment } from "react";
 import Image from "next/image";
 import Head from "next/head";
+// componentes
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Hero from "../components/hero";
 // imagenes
-import hero from "../public/img/hero-img.png";
 import client1 from "../public/img/clients/client-1.png";
 import client2 from "../public/img/clients/client-2.png";
 import client3 from "../public/img/clients/client-3.png";
@@ -39,51 +42,11 @@ export default function Home() {
         <link href={"css/style.css"} rel="stylesheet" />
       </Head>
 
-      {/* ======= Header ======= */}
-      <header id="header" className="fixed-top d-flex align-items-center">
-        <div className="container d-flex align-items-center justify-content-between">
-          <div className="logo">
-            <h1><a href="#hero">RE<span className="text-primary">&</span>RAM</a></h1>
-          </div>
-          <nav id="navbar" className="navbar">
-            <ul>
-              <li><a className="nav-link scrollto active" href="#hero">INICIO</a></li>
-              <li><a className="nav-link scrollto" href="#about">NOSOTROS</a></li>
-              <li><a className="nav-link scrollto" href="#services">SERVICIOS</a></li>
-              <li><a target={"blank"} className="nav-link scrollto" href="https://www.aduanas.gob.do/de-interes/consultas/registro-courier">REGISTRO RUA</a></li>
-              <li><a className="nav-link scrollto" href="#pricing">AVISO DGA</a></li>
-              <li><a target={"target"} className="nav-link scrollto text-success" href="https://forms.gle/PaTBiSDsqhQdUNqh9">HAZTE SOCIO</a></li>
-              <li><a className="nav-link scrollto" href="#contact">CONTACTO</a></li>
-              <li><a className="getstarted scrollto" href="#about"><i className="bi bi-person m-1" /> Mi Cuenta</a></li>
-            </ul>
-            <i className="bi bi-list mobile-nav-toggle" />
-          </nav>
-          {/* .navbar */}
-        </div>
-      </header>
-      {/* End Header */}
-      {/* ======= Hero Section ======= */}
-      <section id="hero" className="d-flex align-items-center">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-              <h1 data-aos="fade-up">Sus paquetes llegan a todo el <span className="text-primary">país</span><i className="bi bi-geo-alt" /></h1>
-              <h2 data-aos="fade-up" data-aos-delay={400}>
-                Ofrecemos un plan logístico para satisfacer las necesidades de nuestros clientes
-              </h2>
-              <div data-aos="fade-up" data-aos-delay={800}>
-                <button className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i className="bi bi-search" /> Rastrea tu paquete
-                </button>
-              </div>
-            </div>
-            <div className="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay={200} >
-              <Image src={hero} className="img-fluid animated" width={500} height={300} alt="..." />
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* End Hero */}
+      <Header />
+
+      <Hero />
+
+      {/* Main section */}
       <main id="main">
         {/* ======= Clients Section ======= */}
         <section id="clients" className="clients clients">
@@ -667,28 +630,9 @@ export default function Home() {
         </section>
         {/* End Contact Section */}
       </main>
-      {/* End #main */}
-      {/* ======= Footer ======= */}
-      <footer id="footer">
-        <div className="container">
-          <div className="row d-flex align-items-center">
-            <div className="col-lg-6 text-lg-left text-center">
-              <div className="copyright">
-                © 2022 <strong>RE<span className="text-primary">&</span>RAM</strong>. Todos los derechos reservados
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <nav className="footer-links text-lg-right text-center pt-2 pt-lg-0">
-                <a href="#intro" className="scrollto">Inicio</a>
-                <a href="#about" className="scrollto">Nosotros</a>
-                <a href="#">Política de Privacidad</a>
-                <a href="#">Términos de Uso</a>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </footer>
-      {/* End Footer */}
+      {/* End #main */}     
+
+      <Footer />
       
       {/* Rastrear modal */}
       <Fragment>
