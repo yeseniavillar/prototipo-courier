@@ -434,7 +434,7 @@ export default function Home() {
             </div>
             <div className="container text-center">
               <div className="row">
-                <div className="col">
+                <div className="col d-flex">
                   <div className="card shadow">
                     <img src="img/sucursal2.jpg" className="card-img-top" alt="..." />
                     <div className="card-body">
@@ -446,7 +446,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col">
+                <div className="col d-flex">
                   <div className="card shadow">
                     <img src="img/sucursal1.jpg" className="card-img-top" alt="..." />
                     <div className="card-body">
@@ -458,7 +458,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col">
+                <div className="col d-flex">
                   <div className="card shadow">
                     <img src="img/sucursal3.jpg" className="card-img-top" alt="..." />
                     <div className="card-body">
