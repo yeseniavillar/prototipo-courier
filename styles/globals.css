@@ -405,10 +405,6 @@ body {
     #hero .hero-img {
       text-align: center;
     }
-  
-    #hero .hero-img img {
-      width: 50%;
-    }
   }
   
   @media (max-width: 768px) {

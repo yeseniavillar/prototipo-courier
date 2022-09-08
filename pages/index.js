@@ -1,29 +1,44 @@
 import React, { Fragment } from "react";
+import Image from "next/image";
+import Head from "next/head";
+// imagenes
+import hero from "../public/img/hero-img.png";
+import client1 from "../public/img/clients/client-1.png";
+import client2 from "../public/img/clients/client-2.png";
+import client3 from "../public/img/clients/client-3.png";
+import client4 from "../public/img/clients/client-4.png";
+import client5 from "../public/img/clients/client-5.png";
+import client6 from "../public/img/clients/client-6.png";
+import counts from "../public/img/counts-img.jpg";
+import sucursal2 from "../public/img/sucursal2.jpg";
+import sucursal1 from "../public/img/sucursal1.jpg";
+import sucursal3 from "../public/img/sucursal3.jpg";
+import rastrear from "../public/img/rastrear.png";
 
 export default function Home() {
   return (
     <>
-      <meta charSet="utf-8" />
-      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      <title>RE&RAM</title>
-      <meta content="" name="description" />
-      <meta content="" name="keywords" />
-      {/* Favicons */}
-      <link href="img/favicon.png" rel="icon" />
-      <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
-      {/* Google Fonts */}
-      <link href={"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"} rel="stylesheet" />
-      {/* Vendor CSS Files */}
-      <link href={"vendor/aos/aos.css"} rel="stylesheet" />
-      <link href={"vendor/bootstrap/css/bootstrap.min.css"} rel="stylesheet" />
-      <link href={"vendor/bootstrap-icons/bootstrap-icons.css"} rel="stylesheet" />
-      <link href={"vendor/boxicons/css/boxicons.min.css"} rel="stylesheet" />
-      <link href={"vendor/glightbox/css/glightbox.min.css"} rel="stylesheet" />
-      <link href={"vendor/remixicon/remixicon.css"} rel="stylesheet" />
-      <link href={"vendor/swiper/swiper-bundle.min.css"} rel="stylesheet" />
+      <Head>
+        <meta charSet="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>RE&RAM</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+        {/* Favicons */}
+        <link href="img/favicon.png" rel="icon" />
+        <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+        {/* Vendor CSS Files */}
+        <link href={"vendor/aos/aos.css"} rel="stylesheet" />
+        <link href={"vendor/bootstrap/css/bootstrap.min.css"} rel="stylesheet" />
+        <link href={"vendor/bootstrap-icons/bootstrap-icons.css"} rel="stylesheet" />
+        <link href={"vendor/boxicons/css/boxicons.min.css"} rel="stylesheet" />
+        <link href={"vendor/glightbox/css/glightbox.min.css"} rel="stylesheet" />
+        <link href={"vendor/remixicon/remixicon.css"} rel="stylesheet" />
+        <link href={"vendor/swiper/swiper-bundle.min.css"} rel="stylesheet" />
 
-      {/* Template Main CSS File */}
-      <link href={"css/style.css"} rel="stylesheet" />
+        {/* Template Main CSS File */}
+        <link href={"css/style.css"} rel="stylesheet" />
+      </Head>
 
       {/* ======= Header ======= */}
       <header id="header" className="fixed-top d-flex align-items-center">
@@ -33,32 +48,14 @@ export default function Home() {
           </div>
           <nav id="navbar" className="navbar">
             <ul>
-              <li>
-                <a className="nav-link scrollto active" href="#hero">INICIO</a>
-              </li>
-              <li>
-                <a className="nav-link scrollto" href="#about">NOSOTROS</a>
-              </li>
-              <li>
-                <a className="nav-link scrollto" href="#services">SERVICIOS</a>
-              </li>
-              <li>
-                <a target={"blank"} className="nav-link scrollto" href="https://www.aduanas.gob.do/de-interes/consultas/registro-courier">REGISTRO RUA</a>
-              </li>
-              <li>
-                <a className="nav-link scrollto" href="#pricing">AVISO DGA</a>
-              </li>
-              <li>
-                <a target={"target"} className="nav-link scrollto text-success" href="https://forms.gle/PaTBiSDsqhQdUNqh9">HAZTE SOCIO</a>
-              </li>
-              <li>
-                <a className="nav-link scrollto" href="#contact">CONTACTO</a>
-              </li>
-              <li>
-                <a className="getstarted scrollto" href="#about">
-                  <i className="bi bi-person m-1" /> Mi Cuenta
-                </a>
-              </li>
+              <li><a className="nav-link scrollto active" href="#hero">INICIO</a></li>
+              <li><a className="nav-link scrollto" href="#about">NOSOTROS</a></li>
+              <li><a className="nav-link scrollto" href="#services">SERVICIOS</a></li>
+              <li><a target={"blank"} className="nav-link scrollto" href="https://www.aduanas.gob.do/de-interes/consultas/registro-courier">REGISTRO RUA</a></li>
+              <li><a className="nav-link scrollto" href="#pricing">AVISO DGA</a></li>
+              <li><a target={"target"} className="nav-link scrollto text-success" href="https://forms.gle/PaTBiSDsqhQdUNqh9">HAZTE SOCIO</a></li>
+              <li><a className="nav-link scrollto" href="#contact">CONTACTO</a></li>
+              <li><a className="getstarted scrollto" href="#about"><i className="bi bi-person m-1" /> Mi Cuenta</a></li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle" />
           </nav>
@@ -82,7 +79,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay={200} >
-              <img src={"img/hero-img.png"} className="img-fluid animated" alt="..." />
+              <Image src={hero} className="img-fluid animated" width={500} height={300} alt="..." />
             </div>
           </div>
         </div>
@@ -94,33 +91,33 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-lg-2 col-md-4 col-6">
-                <a target="_blank" href="https://www.amazon.com/">
-                  <img src="img/clients/client-1.png" className="img-fluid" alt="" data-aos="zoom-in" />
+                <a target={"blank"} href="https://www.amazon.com/">
+                  <Image src={client1} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" />
                 </a>
               </div>
               <div className="col-lg-2 col-md-4 col-6">
-                <a href="https://www.ebay.com/" target="_blank">
-                  <img src="img/clients/client-2.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={100} />
+                <a href="https://www.ebay.com/" target={"blank"}>
+                  <Image src={client2} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={100} />
                 </a>
               </div>
               <div className="col-lg-2 col-md-4 col-6">
-                <a href="https://www.westernunion.com/us/en/home.html" target="_blank">
-                  <img src="img/clients/client-3.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={200} />
+                <a href="https://www.westernunion.com/us/en/home.html" target={"blank"}>
+                  <Image src={client3} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={200} />
                 </a>
               </div>
               <div className="col-lg-2 col-md-4 col-6">
-                <a href="https://best.aliexpress.com/" target="_blank">
-                  <img src="img/clients/client-4.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={300} />
+                <a href="https://best.aliexpress.com/" target={"blank"}>
+                  <Image src={client4} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={300} />
                 </a>
               </div>
               <div className="col-lg-2 col-md-4 col-6">
-                <a href="https://offer.alibaba.com/" target="_blank">
-                  <img src="img/clients/client-5.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={400} />
+                <a href="https://offer.alibaba.com/" target={"blank"}>
+                  <Image src={client5} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={400} />
                 </a>
               </div>
               <div className="col-lg-2 col-md-4 col-6">
-                <a href="https://www.gearbest.com/" target="_blank">
-                  <img src="img/clients/client-6.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={500} />
+                <a href="https://www.gearbest.com/" target={"blank"}>
+                  <Image src={client6} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={500} />
                 </a>
               </div>
             </div>
@@ -169,7 +166,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay={150} >
-                <img src="img/counts-img.jpg" alt="..." className="img-thumbnail shadow" />
+                <Image src={counts} width={600} height={430} alt="..." className="img-thumbnail shadow" />
               </div>
               <div className="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay={300} >
                 <div className="content d-flex flex-column justify-content-center">
@@ -258,7 +255,7 @@ export default function Home() {
                     <i className="bi bi-file-check" />
                   </div>
                   <h4 className="title">
-                    <a target="_blank" rel="noreferrer" href="https://www.aduanas.gob.do/de-interes/consultas/registro-courier">Verificación</a>
+                    <a target={"blank"} rel="noreferrer" href={"https://www.aduanas.gob.do/de-interes/consultas/registro-courier"}>Verificación</a>
                   </h4>
                   <p className="description">
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -366,7 +363,7 @@ export default function Home() {
                           tempor ut labore et dolore magna aliqua.
                         </p>
                         <div className="read-more">
-                          <a target={"blank"} href="https://reyram2022.blogspot.com/"><i className="bi bi-arrow-right" /> Leer mas</a>
+                          <a target={"blank"} href={"https://reyram2022.blogspot.com/"}><i className="bi bi-arrow-right" /> Leer mas</a>
                         </div>
                       </div>
                     </div>
@@ -382,7 +379,7 @@ export default function Home() {
                           doloremque laudantium, totam rem.
                         </p>
                         <div className="read-more">
-                          <a target={"blank"} href="https://reyram2022.blogspot.com/"><i className="bi bi-arrow-right" /> Leer mas</a>
+                          <a target={"blank"} href={"https://reyram2022.blogspot.com/"}><i className="bi bi-arrow-right" /> Leer mas</a>
                         </div>
                       </div>
                     </div>
@@ -397,7 +394,7 @@ export default function Home() {
                           Te llevamos tus paquetes hasta la puerta de tu hogar, sin costo adicional.
                         </p>
                         <div className="read-more">
-                          <a target={"blank"} href="https://reyram2022.blogspot.com/"><i className="bi bi-arrow-right" /> Leer mas</a>
+                          <a target={"blank"} href={"https://reyram2022.blogspot.com/"}><i className="bi bi-arrow-right" /> Leer mas</a>
                         </div>
                       </div>
                     </div>
@@ -436,7 +433,7 @@ export default function Home() {
               <div className="row">
                 <div className="col d-flex">
                   <div className="card shadow">
-                    <img src="img/sucursal2.jpg" className="card-img-top" alt="..." />
+                    <Image src={sucursal2} width={500} height={500} className="card-img-top" alt="..." />
                     <div className="card-body">
                       <h5 className="card-title">La Romana</h5>
                       <p className="card-text"><i className="bi bi-geo-alt" /> Dirección:</p>
@@ -448,7 +445,7 @@ export default function Home() {
                 </div>
                 <div className="col d-flex">
                   <div className="card shadow">
-                    <img src="img/sucursal1.jpg" className="card-img-top" alt="..." />
+                    <Image src={sucursal1} width={500} height={500} className="card-img-top" alt="..." />
                     <div className="card-body">
                       <h5 className="card-title">Oficina Principal</h5>
                       <p className="card-text"><i className="bi bi-geo-alt" /> Dirección:</p>
@@ -460,7 +457,7 @@ export default function Home() {
                 </div>
                 <div className="col d-flex">
                   <div className="card shadow">
-                    <img src="img/sucursal3.jpg" className="card-img-top" alt="..." />
+                    <Image src={sucursal3} width={500} height={500} className="card-img-top" alt="..." />
                     <div className="card-body">
                       <h5 className="card-title">Gazcue</h5>
                       <p className="card-text"><i className="bi bi-geo-alt" /> Dirección:</p>
@@ -685,8 +682,8 @@ export default function Home() {
               <nav className="footer-links text-lg-right text-center pt-2 pt-lg-0">
                 <a href="#intro" className="scrollto">Inicio</a>
                 <a href="#about" className="scrollto">Nosotros</a>
-                <a href="#">Politica de Privacidad</a>
-                <a href="#">Terminos de Uso</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Uso</a>
               </nav>
             </div>
           </div>
@@ -703,7 +700,7 @@ export default function Home() {
               </div>
               <div className="modal-body">
                 <div className="card" >
-                  <img src={"img/rastrear.png"} className="card-img-top" alt="..." />
+                  <Image src={rastrear} width={190} height={240} className="card-img-top" alt="..." />
                   <div className="card-body">
                     <h5 className="card-title">Rastrea tu paquete:</h5>
                     <input type="text" className="form-control mb-3" placeholder="Numero de tracking" />
@@ -726,10 +723,9 @@ export default function Home() {
       <script src={"vendor/glightbox/js/glightbox.min.js"} />
       <script src={"vendor/isotope-layout/isotope.pkgd.min.js"} />
       <script src={"vendor/swiper/swiper-bundle.min.js"} />
-      <script src={"vendor/php-email-form/validate.js"} />
 
       {/* <!-- Template Main JS File --> */}
-      <script src={"js/main.js"} />
+      <script src={"js/main.js"}  />
     </>
   )
 } 
