@@ -35,7 +35,6 @@ export default function Home() {
         <link href={"vendor/glightbox/css/glightbox.min.css"} rel="stylesheet" />
         <link href={"vendor/remixicon/remixicon.css"} rel="stylesheet" />
         <link href={"vendor/swiper/swiper-bundle.min.css"} rel="stylesheet" />
-
         {/* Template Main CSS File */}
         <link href={"css/style.css"} rel="stylesheet" />
       </Head>
@@ -690,7 +689,8 @@ export default function Home() {
         </div>
       </footer>
       {/* End Footer */}
-
+      
+      {/* Rastrear modal */}
       <Fragment>
         <div className="modal text-center" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog">
@@ -717,15 +717,14 @@ export default function Home() {
       </Fragment>
 
       {/* <!-- Vendor JS Files --> */}
-      <script src={"vendor/purecounter/purecounter_vanilla.js"} />
-      <script src={"vendor/aos/aos.js"} />
-      <script src={"vendor/bootstrap/js/bootstrap.bundle.min.js"} />
-      <script src={"vendor/glightbox/js/glightbox.min.js"} />
-      <script src={"vendor/isotope-layout/isotope.pkgd.min.js"} />
-      <script src={"vendor/swiper/swiper-bundle.min.js"} />
-
+      <script src={"vendor/purecounter/purecounter_vanilla.js"} async />
+      <script src={"vendor/aos/aos.js"} async />
+      <script src={"vendor/bootstrap/js/bootstrap.bundle.min.js"} async />
+      <script src={"vendor/glightbox/js/glightbox.min.js"} async />
+      <script src={"vendor/isotope-layout/isotope.pkgd.min.js"} async />
+      <script src={"vendor/swiper/swiper-bundle.min.js"} async />
       {/* <!-- Template Main JS File --> */}
-      <script src={"js/main.js"}  />
+      <script src={"js/main.js"}  async />
     </>
   )
 } 
