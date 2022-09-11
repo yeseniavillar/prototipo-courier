@@ -16,8 +16,8 @@ export default function Hero() {
                 Ofrecemos un plan logístico para satisfacer las necesidades de nuestros clientes
               </h2>
               <div data-aos="fade-up" data-aos-delay={800}>
-                <button className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i className="bi bi-search" /> Rastrea tu paquete
+                <button className="btn btn-outline-primary shadow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i className="bi bi-truck" /> Rastrea tu paquete
                 </button>
               </div>
             </div>

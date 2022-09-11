@@ -12,6 +12,13 @@ import client3 from "../public/img/clients/client-3.png";
 import client4 from "../public/img/clients/client-4.png";
 import client5 from "../public/img/clients/client-5.png";
 import client6 from "../public/img/clients/client-6.png";
+
+import client7 from "../public/img/clients/client-7.png";
+import client8 from "../public/img/clients/client-8.png";
+import client9 from "../public/img/clients/client-9.png";
+import client10 from "../public/img/clients/client-10.png";
+import client11 from "../public/img/clients/client-11.png";
+import client12 from "../public/img/clients/client-12.png";
 import counts from "../public/img/counts-img.jpg";
 import sucursal2 from "../public/img/sucursal2.jpg";
 import sucursal1 from "../public/img/sucursal1.jpg";
@@ -25,7 +32,7 @@ export default function Home() {
         <meta charSet="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <title>RE&RAM</title>
-        <meta content="" name="description" />
+        <meta content="Courier Web Application" name="description" />
         <meta content="" name="keywords" />
 
         {/* <!-- Vendor CSS Files --> */}
@@ -49,36 +56,76 @@ export default function Home() {
         {/* ======= Clients Section ======= */}
         <section id="clients" className="clients clients">
           <div className="container">
-            <div className="row">
-              <div className="col-lg-2 col-md-4 col-6">
-                <a target={"blank"} href="https://www.amazon.com/">
-                  <Image src={client1} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" />
-                </a>
-              </div>
-              <div className="col-lg-2 col-md-4 col-6">
-                <a href="https://www.ebay.com/" target={"blank"}>
-                  <Image src={client2} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={100} />
-                </a>
-              </div>
-              <div className="col-lg-2 col-md-4 col-6">
-                <a href="https://www.westernunion.com/us/en/home.html" target={"blank"}>
-                  <Image src={client3} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={200} />
-                </a>
-              </div>
-              <div className="col-lg-2 col-md-4 col-6">
-                <a href="https://best.aliexpress.com/" target={"blank"}>
-                  <Image src={client4} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={300} />
-                </a>
-              </div>
-              <div className="col-lg-2 col-md-4 col-6">
-                <a href="https://offer.alibaba.com/" target={"blank"}>
-                  <Image src={client5} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={400} />
-                </a>
-              </div>
-              <div className="col-lg-2 col-md-4 col-6">
-                <a href="https://www.gearbest.com/" target={"blank"}>
-                  <Image src={client6} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={500} />
-                </a>
+            <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="row">
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a target={"blank"} href="https://www.amazon.com/">
+                        <Image src={client1} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" />
+                      </a>
+                    </div>
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a href="https://www.ebay.com/" target={"blank"}>
+                        <Image src={client2} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={100} />
+                      </a>
+                    </div>
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a href="https://www.westernunion.com/us/en/home.html" target={"blank"}>
+                        <Image src={client3} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={200} />
+                      </a>
+                    </div>
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a href="https://best.aliexpress.com/" target={"blank"}>
+                        <Image src={client4} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={300} />
+                      </a>
+                    </div>
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a href="https://offer.alibaba.com/" target={"blank"}>
+                        <Image src={client5} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={400} />
+                      </a>
+                    </div>
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a href="https://www.gearbest.com/" target={"blank"}>
+                        <Image src={client6} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={500} />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="row">
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a target={"blank"} href="https://www.nike.com/">
+                        <Image src={client7} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" />
+                      </a>
+                    </div>
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a href="https://www.ebay.com/" target={"blank"}>
+                        <Image src={client8} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={100} />
+                      </a>
+                    </div>
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a href="https://www.westernunion.com/us/en/home.html" target={"blank"}>
+                        <Image src={client9} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={200} />
+                      </a>
+                    </div>
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a href="https://best.aliexpress.com/" target={"blank"}>
+                        <Image src={client10} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={300} />
+                      </a>
+                    </div>
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a href="https://offer.alibaba.com/" target={"blank"}>
+                        <Image src={client11} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={400} />
+                      </a>
+                    </div>
+                    <div className="col-lg-2 col-md-4 col-6">
+                      <a href="https://www.gearbest.com/" target={"blank"}>
+                        <Image src={client12} width={90} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={500} />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -107,8 +154,8 @@ export default function Home() {
                   Nos caracterizamos por brindar servicios de courier con tiempo de entrega más rápido, por tanto, muchas empresas confían en nosotros.
                 </p>
                 <div className="row">
-                  <div className="col"><a href="#contact" className="btn-learn-more"><i className="bi bi-hand-index" /> Sugerencia </a></div>
-                  <div className="col"><a target={"blank"} href="https://forms.gle/PaTBiSDsqhQdUNqh9" className="btn-learn-more"><i className="bi bi-person" /> Hazte Socio </a></div>
+                  <div className="col"><a href="#contact" className="btn-learn-more shadow"><i className="bi bi-hand-index" /> Sugerencia </a></div>
+                  <div className="col"><a target={"blank"} href="https://forms.gle/PaTBiSDsqhQdUNqh9" className="btn-learn-more shadow"><i className="bi bi-person" /> Hazte Socio </a></div>
                 </div>
               </div>
             </div>
@@ -121,6 +168,7 @@ export default function Home() {
             <div className="row">
               <div className="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay={150} >
                 <Image src={counts} width={600} height={430} alt="..." className="img-thumbnail shadow" />
+                {/* <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn"></a> */}
               </div>
               <div className="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay={300} >
                 <div className="content d-flex flex-column justify-content-center">
@@ -217,7 +265,7 @@ export default function Home() {
               <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div className="icon-box" data-aos="fade-up" data-aos-delay={400}>
                   <div className="icon">
-                    <i className="bi bi-credit-card" />
+                    <i className="bi bi-cash-coin" />
                   </div>
                   <h4 className="title">
                     <a href="">Liquidación y pago de impuestos aduanales</a>
@@ -548,7 +596,7 @@ export default function Home() {
                   <p>
                     Es una empresa de servicios aduanales aéreos , marítimos y terrestres internacionales de carga, exportación e importación de mercancía.
                   </p>
-                  <h6>Síguenos en:</h6>
+                  <h6>Redes sociales:</h6>
                   <div className="social-links">
                     <a href="#" className="twitter">
                       <i className="bi bi-twitter" />
@@ -610,7 +658,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="text-center">
-                    <button type="submit"><i className="bi bi-send" /> Enviar Sugerencia</button>
+                    <button type="submit" className="shadow"><i className="bi bi-send" /> Enviar Sugerencia</button>
                   </div>
                 </form>
               </div>
@@ -635,7 +683,7 @@ export default function Home() {
                   <div className="card-body">
                     <h5 className="card-title">Rastrea tu paquete:</h5>
                     <input type="text" className="form-control mb-3" placeholder="Numero de tracking" />
-                    <a href="#" className="btn btn-outline-primary"><i className="bi bi-search" /> Rastrear</a>
+                    <a href="#" className="btn btn-primary shadow"><i className="bi bi-search" /> RASTREAR</a>
                   </div>
                 </div>
               </div>
