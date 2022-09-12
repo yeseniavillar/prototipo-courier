@@ -12,7 +12,6 @@ import client3 from "../public/img/clients/client-3.png";
 import client4 from "../public/img/clients/client-4.png";
 import client5 from "../public/img/clients/client-5.png";
 import client6 from "../public/img/clients/client-6.png";
-
 import client7 from "../public/img/clients/client-7.png";
 import client8 from "../public/img/clients/client-8.png";
 import client9 from "../public/img/clients/client-9.png";
@@ -31,10 +30,9 @@ export default function Home() {
       <Head>
         <meta charSet="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <title>RE&RAM</title>
+        <title>RE&RAM | Courier</title>
         <meta content="Courier Web Application" name="description" />
         <meta content="" name="keywords" />
-
         {/* <!-- Vendor CSS Files --> */}
         <link href="vendor/aos/aos.css" rel="stylesheet" />
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -43,7 +41,6 @@ export default function Home() {
         <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
         <link href="vendor/remixicon/remixicon.css" rel="stylesheet" />
         <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
         {/* <!-- Template Main CSS File --> */}
         <link href="css/style.css" rel="stylesheet" />
       </Head>
@@ -96,32 +93,32 @@ export default function Home() {
                   <div className="row">
                     <div className="col-lg-2 col-md-4 col-6">
                       <a target={"blank"} href="https://www.nike.com/">
-                        <Image src={client7} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" />
+                        <Image src={client7} width={85} height={32} className="img-fluid" alt="..." data-aos="zoom-in" />
                       </a>
                     </div>
                     <div className="col-lg-2 col-md-4 col-6">
                       <a href="https://www.ebay.com/" target={"blank"}>
-                        <Image src={client8} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={100} />
+                        <Image src={client8} width={85} height={32} className="img-fluid" alt="..." data-aos="zoom-in" data-aos-delay={100} />
                       </a>
                     </div>
                     <div className="col-lg-2 col-md-4 col-6">
                       <a href="https://www.westernunion.com/us/en/home.html" target={"blank"}>
-                        <Image src={client9} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={200} />
+                        <Image src={client9} width={85} height={32} className="img-fluid" alt="..." data-aos="zoom-in" data-aos-delay={200} />
                       </a>
                     </div>
                     <div className="col-lg-2 col-md-4 col-6">
                       <a href="https://best.aliexpress.com/" target={"blank"}>
-                        <Image src={client10} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={300} />
+                        <Image src={client10} width={85} height={32} className="img-fluid" alt="..." data-aos="zoom-in" data-aos-delay={300} />
                       </a>
                     </div>
                     <div className="col-lg-2 col-md-4 col-6">
                       <a href="https://offer.alibaba.com/" target={"blank"}>
-                        <Image src={client11} width={85} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={400} />
+                        <Image src={client11} width={85} height={32} className="img-fluid" alt="..." data-aos="zoom-in" data-aos-delay={400} />
                       </a>
                     </div>
                     <div className="col-lg-2 col-md-4 col-6">
                       <a href="https://www.gearbest.com/" target={"blank"}>
-                        <Image src={client12} width={90} height={32} className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay={500} />
+                        <Image src={client12} width={90} height={32} className="img-fluid" alt="..." data-aos="zoom-in" data-aos-delay={500} />
                       </a>
                     </div>
                   </div>
@@ -695,6 +692,8 @@ export default function Home() {
         </div>
       </Fragment>
 
+      <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i
+      className="bi bi-arrow-up-short"></i></a>
 
       {/* <!-- Vendor JS Files --> */}
       <script src={"vendor/purecounter/purecounter_vanilla.js"} async />
